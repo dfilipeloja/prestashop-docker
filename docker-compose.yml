@@ -4,7 +4,6 @@ services:
     build: docker-images/apache
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./prestashop/:/var/www/html/
     networks:
